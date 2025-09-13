@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Registration Form</title>
+</head>
+
+<body>
+  <main>
+    <h1>Course Registration Form</h1>
+    <form action="/submit-registration" method="POST">
+
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name: *</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="John Doe" /><br><br>
+
+        <label for="email">Email Address: *</label>
+        <input type="email" id="email" name="email" required placeholder="example@email.com" /><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+1234567890" /><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" /><br><br>
+
+        <label for="profilePic">Profile Picture:</label>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*" /><br><br>
+      </fieldset>
+
+      <!-- Academic Background -->
+      <fieldset>
+        <legend>Academic Background</legend>
+
+        <label for="educationLevel">Current Education Level:</label>
+        <select id="educationLevel" name="educationLevel">
+          <option value="highschool">High School</option>
+          <option value="bachelor">Bachelor's</option>
+          <option value="master">Master's</option>
+          <option value="phd">PhD</option>
+        </select><br><br>
+
+        <label for="fieldOfStudy">Field of Study:</label>
+        <input type="text" id="fieldOfStudy" name="fieldOfStudy" placeholder="Computer Science" /><br><br>
+
+        <label for="experience">Years of Programming Experience:</label>
+        <input type="number" id="experience" name="experience" min="0" max="20" /><br><br>
+      </fieldset>
+
+      <!-- Course Preferences -->
+      <fieldset>
+        <legend>Course Preferences</legend>
+
+        <p>Preferred Learning Mode:</p>
+        <label><input type="radio" name="learningMode" value="online" /> Online</label>
+        <label><input type="radio" name="learningMode" value="offline" /> Offline</label>
+        <label><input type="radio" name="learningMode" value="hybrid" /> Hybrid</label><br><br>
+
+        <p>Course Categories:</p>
+        <label><input type="checkbox" name="courseCategory" value="webdev" /> Web Development</label>
+        <label><input type="checkbox" name="courseCategory" value="mobiledev" /> Mobile App Development</label>
+        <label><input type="checkbox" name="courseCategory" value="datasci" /> Data Science</label>
+        <label><input type="checkbox" name="courseCategory" value="ai" /> AI/ML</label>
+        <label><input type="checkbox" name="courseCategory" value="devops" /> DevOps</label><br><br>
+
+        <p>Preferred Schedule:</p>
+        <label><input type="radio" name="schedule" value="weekdays" /> Weekdays</label>
+        <label><input type="radio" name="schedule" value="weekends" /> Weekends</label>
+        <label><input type="radio" name="schedule" value="flexible" /> Flexible</label><br><br>
+      </fieldset>
+
+      <!-- Additional Info -->
+      <fieldset>
+        <legend>Additional Information</legend>
+
+        <label for="experienceLevel">Programming Experience Level:</label>
+        <input type="range" id="experienceLevel" name="experienceLevel" min="1" max="10" /><br><br>
+
+        <label for="comments">Special Requirements or Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4"
+          placeholder="Let us know if you have any special needs..."></textarea><br><br>
+
+        <p>Preferred Contact Method:</p>
+        <label><input type="radio" name="contactMethod" value="email" /> Email</label>
+        <label><input type="radio" name="contactMethod" value="phone" /> Phone</label>
+        <label><input type="radio" name="contactMethod" value="sms" /> SMS</label><br><br>
+      </fieldset>
+
+      <!-- Terms -->
+      <fieldset>
+        <legend>Terms and Conditions</legend>
+        <label><input type="checkbox" name="terms" required /> I agree to the Terms and Conditions *</label><br>
+        <label><input type="checkbox" name="newsletter" /> I want to receive newsletters and updates</label><br><br>
+      </fieldset>
+
+      <!-- Buttons -->
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+</body>
+
+</html>
