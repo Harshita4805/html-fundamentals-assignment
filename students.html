@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management Dashboard</title>
+</head>
+
+<body>
+    <main>
+        <h1>Student Management Dashboard</h1>
+
+        <table border="1">
+            <caption><strong>Computer Science Students - Batch 2024</strong></caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Student ID</th>
+                    <th scope="col">Student Name</th>
+                    <th scope="col" colspan="2">Course Details</th>
+                    <th scope="col" colspan="2">Contact Information</th>
+                    <th scope="col">Semester</th>
+                    <th scope="col">GPA</th>
+                    <th scope="col">Status</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th scope="col">Course Name</th>
+                    <th scope="col">Credits</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>CS001</td>
+                    <td>Alice Johnson</td>
+                    <td>Data Structures</td>
+                    <td>3</td>
+                    <td>alice.johnson@example.com</td>
+                    <td>+1234567890</td>
+                    <td>5</td>
+                    <td>3.7</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">CS002</td>
+                    <td rowspan="2">Bob Smith</td>
+                    <td>Operating Systems</td>
+                    <td>4</td>
+                    <td rowspan="2">bob.smith@example.com</td>
+                    <td rowspan="2">+1987654321</td>
+                    <td rowspan="2">6</td>
+                    <td rowspan="2">3.5</td>
+                    <td rowspan="2">Active</td>
+                </tr>
+                <tr>
+                    <td>Computer Networks</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS003</td>
+                    <td>Carol Lee</td>
+                    <td>Machine Learning</td>
+                    <td>4</td>
+                    <td>carol.lee@example.com</td>
+                    <td>+1122334455</td>
+                    <td>6</td>
+                    <td>3.9</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">CS004</td>
+                    <td rowspan="2">David Kim</td>
+                    <td>Web Development</td>
+                    <td>3</td>
+                    <td rowspan="2">david.kim@example.com</td>
+                    <td rowspan="2">+1230984567</td>
+                    <td rowspan="2">4</td>
+                    <td rowspan="2">3.2</td>
+                    <td rowspan="2">Inactive</td>
+                </tr>
+                <tr>
+                    <td>Database Systems</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>CS005</td>
+                    <td>Emma Watson</td>
+                    <td>Cybersecurity</td>
+                    <td>3</td>
+                    <td>emma.watson@example.com</td>
+                    <td>+1357908642</td>
+                    <td>5</td>
+                    <td>2.8</td>
+                    <td>Inactive</td>
+                </tr>
+                <tr>
+                    <td>CS006</td>
+                    <td>Frank Thomas</td>
+                    <td>AI Fundamentals</td>
+                    <td>3</td>
+                    <td>frank.thomas@example.com</td>
+                    <td>+1472583690</td>
+                    <td>6</td>
+                    <td>3.6</td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="9"><strong>Summary</strong></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Total Students:</strong> 6</td>
+                    <td colspan="3"><strong>Average GPA:</strong> 3.45</td>
+                    <td colspan="3"><strong>Active: 4 | Inactive: 2</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <section aria-label="Summary Section">
+            <h2>Dashboard Summary</h2>
+            <p><strong>Total Students:</strong> 6</p>
+            <p><strong>Average GPA:</strong> 3.45</p>
+            <p><strong>Status:</strong> 4 Active, 2 Inactive</p>
+        </section>
+    </main>
+</body>
+
+</html>
